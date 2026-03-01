@@ -6,13 +6,39 @@
     <title>1-timer</title>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/timer.css" />
   </head>
-
   <body>
-    <section>
-      <div class="container">
-      </div>
-    </section>
+      <main>
+        <section class="timer-section">
+          <div class="container">
+            <div class="wrapper">
+              <div class="input-wrapper">
+                <input class="input" type="text" id="datetime-picker" />
+                <button type="button" data-start>Start</button>
+              </div>
+              <div class="timer">
+                <div class="field">
+                  <span class="value" data-days>00</span>
+                  <span class="label">Days</span>
+                </div>
+                <div class="field">
+                  <span class="value" data-hours>00</span>
+                  <span class="label">Hours</span>
+                </div>
+                <div class="field">
+                  <span class="value" data-minutes>00</span>
+                  <span class="label">Minutes</span>
+                </div>
+                <div class="field">
+                  <span class="value" data-seconds>00</span>
+                  <span class="label">Seconds</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
     <script src="./js/1-timer.js" type="module"></script>
   </body>
 </html>
