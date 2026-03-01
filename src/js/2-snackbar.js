@@ -30,7 +30,7 @@ form.addEventListener('submit', event => {
       console.log(`✅ Fulfilled promise in ${delay}ms`);
       iziToast.success({
         title: 'Success',
-        message: `Promise fulfilled in ${delay}ms`,
+        message: `✅ Fulfilled promise in ${delay}ms`,
         position: 'topRight',
       });
     })
@@ -38,7 +38,7 @@ form.addEventListener('submit', event => {
       console.log(`❌ Rejected promise in ${delay}ms`);
       iziToast.error({
         title: 'Error',
-        message: `Promise rejected in ${delay}ms`,
+        message: `❌ Rejected promise in ${delay}ms`,
         position: 'topRight',
       });
     });
